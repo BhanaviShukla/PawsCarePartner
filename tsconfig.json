@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": false,
+    "suppressExcessPropertyErrors": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "downlevelIteration": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@tests/*": ["__tests__/*"],
+      "@components/*": ["src/components/*"],
+      "@pages/*": ["pages/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@api/*": ["pages/api/*"],
+      "@styles/*": ["styles/*"],
+      "@screens/*": ["src/screens/*"],
+      "@redux/*": ["src/redux/*"],
+      "@layout/*": ["src/layout/*"],
+      "@util/*": ["src/util/*"],
+      "@types/*": ["src/types/*"]
+    }
+  },
+  "exclude": ["server", "dist", "node_modules", "prod_node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}

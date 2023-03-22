@@ -1,0 +1,73 @@
+{
+  "plugins": ["@typescript-eslint", "unused-imports", "import"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "commonjs": true,
+    "node": true,
+    "mocha": true,
+    "jest": true
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": ">=17.0.2"
+    }
+  },
+  "rules": {
+    "quote-props": ["error", "as-needed"],
+    "no-undef": 0,
+    "no-extra-semi": 2,
+    "no-trailing-spaces": [
+      1,
+      {
+        "skipBlankLines": true
+      }
+    ],
+    "no-unreachable": 2,
+    "react/no-unescaped-entities": "off",
+    "react/display-name": "off",
+    "prefer-arrow-callback": 1,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".ts", ".tsx"]
+      }
+    ],
+    "strict": "off",
+    "padded-blocks": "off",
+    "comma-dangle": "warn",
+    "no-param-reassign": "off",
+    "arrow-body-style": "off",
+    "no-else-return": "error",
+    "require-atomic-updates": "error",
+    "dot-notation": "off",
+    "linebreak-style": ["error", "unix"],
+    "semi": ["error", "always"],
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "react/function-component-definition": "error",
+    "@typescript-eslint/no-var-requires": "warn",
+    "prefer-const": "warn",
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-empty-interface": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["pages/**/*.tsx", "pages/**/*.ts"],
+      "rules": {
+        "import/no-default-export": "off"
+      }
+    },
+    {
+      "files": ["src/components/**/*.tsx", "src/screens/**/*.tsx"],
+      "rules": {
+        "import/no-default-export": "error"
+      }
+    }
+  ],
+  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended", "prettier"]  // Add "prettier" last. This will turn off eslint rules conflicting with prettier. This is not what will format our code.
+
+}

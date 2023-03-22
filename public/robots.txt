@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /*
+Disallow: /auth*
+Sitemap: /sitemap-index.xml

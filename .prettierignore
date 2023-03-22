@@ -1,0 +1,14 @@
+
+
+.husky
+.prettierignore
+.eslintignore
+Dockerfile
+yarn.lock
+dist
+node_modules
+.vscode
+.next
+.idea
+public
+

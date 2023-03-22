@@ -1,0 +1,8 @@
+- [ ] self review
+- [ ] jira
+- [ ] unit test
+- [ ] additions less than 250
+- [ ] describe changes
+- [ ] feature flag
+- [ ] web screenshot
+- [ ] mobile screenshot
