@@ -41,7 +41,7 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^12.2.4",
+    "@next/bundle-analyzer": "^13.4.3",
     "@redux-devtools/extension": "^3.2.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
